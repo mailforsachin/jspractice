@@ -18,3 +18,5 @@ console.log(myVar)
 const pi =3.14;
 //pi=2.44; Error
 console.log(pi)
+
+
