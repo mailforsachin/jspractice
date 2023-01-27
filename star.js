@@ -1,20 +1,28 @@
 // how to print triangle of star in javascript
+var j=0;
 
-var star = new Array(); 
-// create an array of stars 
-star.push(new Star(200, 100, 100)); 
-// create a new star 
-var triangle = star.join("");
- // join the star array to the triangle 
- console.log(triangle);
-// let count=10;
-// for (let i=1;i<count;i++)
-// {
-//     document.write("#");
-//     for (j=i;j<count;j++)
-//     {
-//         document.write("#");
-//         document.write("<br>")
-//     }
-    
-// }
+for (let i =1; i<10;i++)
+{
+        // i =1
+       
+        while(j<i)
+        {
+            //document.write("# " + `j is ${j} , i is ${i}`)
+            //document.write("#")
+            document.write("<br>");
+            for (let k=0;k<i;k++)
+            {
+                document.write("#");
+                
+                
+                // document.write(`value of i is ${i} and j is ${j}`);
+                
+            }
+            j=j+1;
+            continue;
+        }
+            
+}
+
+
+
