@@ -31,18 +31,39 @@ const characters = [
 
 // MAP
 // Get an array of all names
-var allNames = characters.map((characters)=>{return characters.name});
+//var allNames = characters.map((characters)=>{return characters.name});  //Also Works
+var allNames = characters.map((characters) => characters.name);
 document.write(allNames);
 
 // Get an array of all heights
-var allHeight =characters.map((characters)=>{return characters.height});
-document.write("<br>")
-document.write(allHeight)
+//var allHeight =characters.map((characters)=>{return characters.height}); //Also works
+var allHeight = characters.map((characters) => characters.height);
+document.write("<br>");
+document.write(allHeight);
 
 // Get an array of objects with just name and height properties
-var allNameAndHeight =characters.map((characters)=>{return `[${characters.height}, ${characters.name}]`});
-document.write("<br>")
-document.write(allNameAndHeight)
+//var allNameAndHeight =characters.map((characters)=>{return `[${characters.height}, ${characters.name}]`}); //Also works
+var charactersNamesHeight = characters.map(character => ({name: character.name, height: character.height}));
+console.log(charactersNamesHeight);
+
+console.log(charactersNamesHeight.length)
+let printArr;
+for (printArr=0;printArr<charactersNamesHeight.length;printArr++)
+
+{
+    
+    console.log(`The fullname is ${charactersNamesHeight[printArr].name}`)
+    let firstName=charactersNamesHeight[printArr].name.split(" ");
+    console.log(`The firstname is ${firstName[0]}`);
+    document.write("<br>")
+
+}
+
+// Get an array of all first names
+
+// var charactersNamesHeight = characters.map(character => ({name: character.name, height: character.height}));
+// document.write("<br>");
+
 
 
 
